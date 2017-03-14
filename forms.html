@@ -1,0 +1,93 @@
+<head>
+
+  <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+
+  <style>
+    body {
+      background-color: #3498db;
+      font-family: "Roboto"; 
+    }
+
+    .logo {
+      padding-top: 40px; 
+      padding-bottom: 40px; 
+      text-align: center; 
+      margin:auto;
+      display: block;
+    }
+
+    fieldset {
+      margin:auto;
+      display: block;
+      border: none; 
+      background-color:white;
+      width: 320px; 
+      padding:40px; 
+    }
+
+    label p{
+      padding-bottom: 5px; 
+    }
+
+    input {
+      width: 320px; 
+      padding: 15px; 
+      border: #ecf0f1 2px solid; 
+    }
+
+    button {
+      
+    }
+
+    button, .submit, .forgotpwd, .haveaccount { margin:auto; display: block; }
+
+    .submit {
+      color: white; 
+      background-color: #2ecc71; 
+      margin-top: 20px; 
+      width: 320px; 
+      padding: 15px; 
+      border: #ecf0f1 1px solid; 
+      font-size: 1.4em; 
+    }
+
+    .forgotpwd {
+      margin-top: 20px; 
+      text-align: center;
+      color: grey; 
+    }
+
+    .haveaccount {
+      color: white; 
+      text-align: center; 
+      padding: 15px;  
+    }
+
+
+  </style>
+</head>
+
+<body>
+  <form class='demo-form' action="/some-server-endpoint" method='post'>
+    <img class= "logo" src="analog_logo.png" height="35px">
+ 
+    <fieldset name="Sign up">      
+      <h1>Sign up</h1>
+      <label for="email"><p>Email</p></label>
+        <input placeholder='foo@bar.com' type="text" name='email' id='email' required/>
+
+      <label for="password"><p>Password</p></label>
+        <input type="text" name='password' id='password' placeholder='123passw0rd'  required/>
+    
+      <button class = "submit" type='submit'>Sign up</button>
+    
+      <a class= "forgotpwd" href="./forgotpassword"> Forgot password?</a>
+    </fieldset>
+
+    <p class= "haveaccount">Already have an account? <a href="">Log in</a></p>
+    
+   
+    
+    
+  </form>
+</body>
